@@ -3,7 +3,7 @@
 import { init } from '@eppo/node-server-sdk';
 
 const eppoClientPromise = init({
-  apiKey: process.env.EPPO_API_KEY ?? '', // SDK keys defined at https://eppo.cloud/feature-flags/keys
+  apiKey: process.env.EPPO_SDK_KEY!,
   assignmentLogger: {
     logAssignment(assignment) {
       console.log('TODO: log ', assignment);
