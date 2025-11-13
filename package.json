@@ -9,7 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@eppo/node-server-sdk": "^3.12.1",
+    "@eppo/js-client-sdk": "^3.16.1",
+    "@eppo/js-client-sdk-common": "^4.15.1",
+    "@eppo/node-server-sdk": "^3.11.0",
     "next": "16.0.3",
     "react": "19.2.0",
     "react-dom": "19.2.0"
