@@ -1,7 +1,6 @@
 import OfferExperiment from './OfferExperiment';
 import getStringAssignment from './shared/get-string-assignment';
 
-export const experimental_ppr = true
 
 export default async function Home() {
   const flagKey = 'investigate-eppo-server-islands';
