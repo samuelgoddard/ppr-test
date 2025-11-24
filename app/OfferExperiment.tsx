@@ -1,3 +1,5 @@
+import { headers } from 'next/headers';
+
 import type { FunctionComponent } from 'react';
 
 interface OfferExperimentProps {
@@ -7,11 +9,14 @@ interface OfferExperimentProps {
 export const OfferExperiment: FunctionComponent<OfferExperimentProps> = ({
   variation,
 }) => (
-  <h1>
-    {variation === 'control' && <p>Control Variation</p>}
-    {variation === 'test' && <p>Test Variation</p>}
-    {!variation && <p>No Variation</p>}
-  </h1>
+  <>
+    {JSON.stringify(headers())}
+    <h1>
+      {variation === 'control' && <p>Control Variation</p>}
+      {variation === 'test' && <p>Test Variation</p>}
+      {!variation && <p>No Variation</p>}
+    </h1>
+  </>
 );
 
 export default OfferExperiment;
